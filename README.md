@@ -5,225 +5,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon CV</title>
     <style>
-        /* Styles généraux */
         body {
             font-family: Arial, sans-serif;
+            margin: 40px;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
             color: #333;
         }
-
         .container {
-            max-width: 900px;
+            width: 80%;
             margin: auto;
             background: #fff;
             padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
-
         h1, h2 {
-            color: #0056b3;
-            border-bottom: 2px solid #0056b3;
+            color: #2c3e50;
+            border-bottom: 2px solid #2c3e50;
             padding-bottom: 5px;
             margin-top: 20px;
         }
-
-        h1 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 30px;
-        }
-
-        /* Section Informations personnelles */
-        .personal-info p {
-            margin: 5px 0;
-        }
-
-        .personal-info strong {
-            color: #0056b3;
-        }
-
-        /* Sections Expérience et Formation */
-        .section-item {
-            margin-bottom: 20px;
-        }
-
-        .section-item h3 {
-            margin-top: 0;
-            color: #333;
-        }
-
-        .section-item p {
-            margin: 5px 0;
-        }
-
         ul {
             list-style: none;
             padding: 0;
         }
-
         ul li {
-            background: #e9e9e9;
             margin-bottom: 5px;
-            padding: 8px 15px;
-            border-left: 5px solid #007bff;
         }
-
-        /* Compétences */
-        .skills ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .section {
+            margin-bottom: 25px;
         }
-
-        .skills ul li {
-            background: #007bff;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            border-left: none; /* Override default list style */
+        .experience-item, .education-item {
+            margin-bottom: 15px;
         }
-
-        /* Intérêts */
-        .interests ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+        .experience-item h3, .education-item h3 {
+            margin-bottom: 5px;
+            color: #34495e;
         }
-
-        .interests ul li {
-            background: #6c757d;
-            color: white;
-            padding: 8px 15px;
-            border-radius: 20px;
-            border-left: none; /* Override default list style */
+        .experience-item p, .education-item p {
+            margin: 0;
         }
-
-        /* Pied de page (optionnel) */
-        footer {
+        .contact-info {
             text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #666;
+            margin-bottom: 20px;
+        }
+        .contact-info p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Votre Nom et Prénom</h1>
-            <p style="text-align: center;">Votre Titre Professionnel (Ex: Développeur Web, Chef de Projet)</p>
-        </header>
+        <div class="contact-info">
+            <h1>Prénom Nom</h1>
+            <p>Adresse : Votre Rue, Votre Ville, Votre Code Postal</p>
+            <p>Téléphone : ‪+33 123 456 789‬</p>
+            <p>Email : votre.email@example.com</p>
+            <p>LinkedIn : <a href="https://www.linkedin.com/in/votrenom" target="_blank">linkedin.com/in/votrenom</a></p>
+        </div>
 
-        <hr>
-
-        <section class="personal-info">
-            <h2>Informations Personnelles</h2>
-            <p><strong>Adresse :</strong> Votre Rue, Votre Ville, Code Postal</p>
-            <p><strong>Téléphone :</strong> ‪+33 1 23 45 67 89‬</p>
-            <p><strong>Email :</strong> votre.email@example.com</p>
-            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/votrenom" target="_blank">linkedin.com/in/votrenom</a></p>
-            <p><strong>Portfolio/GitHub :</strong> <a href="https://www.votresite.com" target="_blank">votresite.com</a></p>
-        </section>
-
-        <hr>
-
-        <section class="summary">
+<div class="section">
             <h2>À Propos de Moi</h2>
             <p>
-                Rédigez ici un court paragraphe qui présente votre parcours, vos compétences clés et vos objectifs de carrière.
-                C'est une section importante pour capter l'attention du recruteur. Soyez concis et percutant.
-                Par exemple : "Développeur web passionné avec X années d'expérience en [technologie 1] et [technologie 2].
-                Recherche un poste stimulant où je pourrai mettre à profit mes compétences en [domaine] et contribuer au succès de l'entreprise."
+                Je suis un professionnel dynamique et motivé avec X années d'expérience dans [votre domaine]. Je suis passionné par [un aspect de votre domaine] et je cherche à apporter mes compétences et mon expertise à une équipe innovante.
             </p>
-        </section>
+        </div>
 
-        <hr>
-
-        <section class="experience">
+<div class="section">
             <h2>Expérience Professionnelle</h2>
-            <div class="section-item">
-                <h3>Poste Occupé | Nom de l'Entreprise</h3>
-                <p><strong>Durée :</strong> Mois Année - Mois Année (ou "Présent") | Ville, Pays</p>
+            <div class="experience-item">
+                <h3>Titre du Poste</h3>
+                <p><strong>Nom de l'Entreprise</strong> | Ville, Pays</p>
+                <p>Mois Année - Mois Année</p>
                 <ul>
-                    <li>Description de vos responsabilités et réalisations clés. Utilisez des verbes d'action.</li>
-                    <li>Quantifiez vos succès lorsque c'est possible (ex: "Augmentation de X% des ventes").</li>
-                    <li>Mettez en avant les compétences utilisées.</li>
+                    <li>Description de la première responsabilité et de son impact.</li>
+                    <li>Description de la deuxième responsabilité et de son impact.</li>
+                    <li>Description de la troisième responsabilité et de son impact.</li>
                 </ul>
             </div>
-            <div class="section-item">
-                <h3>Autre Poste | Autre Entreprise</h3>
-                <p><strong>Durée :</strong> Mois Année - Mois Année | Ville, Pays</p>
+            <div class="experience-item">
+                <h3>Ancien Titre du Poste</h3>
+                <p><strong>Ancienne Entreprise</strong> | Ville, Pays</p>
+                <p>Mois Année - Mois Année</p>
                 <ul>
-                    <li>Description des responsabilités et réalisations.</li>
-                    <li>Utilisez des puces pour une meilleure lisibilité.</li>
+                    <li>Description de la première responsabilité.</li>
+                    <li>Description de la deuxième responsabilité.</li>
                 </ul>
             </div>
-            </section>
-
-        <hr>
-
-        <section class="education">
+        </div> <div class="section">
             <h2>Formation</h2>
-            <div class="section-item">
-                <h3>Diplôme/Titre | Nom de l'Établissement</h3>
-                <p><strong>Années :</strong> Année de début - Année de fin | Ville, Pays</p>
-                <ul>
-                    <li>Mention obtenue (si applicable)</li>
-                    <li>Projets pertinents ou cours clés</li>
-                </ul>
+            <div class="education-item">
+                <h3>Nom du Diplôme</h3>
+                <p><strong>Nom de l'Université/École</strong> | Ville, Pays</p>
+                <p>Année de début - Année de fin</p>
+                <p>Notes ou mentions (si pertinent).</p>
             </div>
-            <div class="section-item">
-                <h3>Autre Diplôme | Autre Établissement</h3>
-                <p><strong>Années :</strong> Année de début - Année de fin | Ville, Pays</p>
+            <div class="education-item">
+                <h3>Autre Diplôme ou Certification</h3>
+                <p><strong>Nom de l'Institution</strong> | Ville, Pays</p>
+                <p>Année</p>
             </div>
-            </section>
+        </div>
 
-        <hr>
-
-        <section class="skills">
+ <div class="section">
             <h2>Compétences</h2>
             <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Gestion de Projet</li>
-                <li>Communication</li>
-                <li>Travail d'équipe</li>
+                <li><strong>Langages de programmation :</strong> Python, JavaScript, Java, C++</li>
+                <li><strong>Outils et technologies :</strong> Git, Docker, AWS, SQL, NoSQL</li>
+                <li><strong>Logiciels :</strong> Microsoft Office Suite, Adobe Creative Suite</li>
+                <li><strong>Langues :</strong> Français (Maternelle), Anglais (Courant), Espagnol (Intermédiaire)</li>
             </ul>
-        </section>
+        </div>
 
-        <hr>
-
-        <section class="languages">
-            <h2>Langues</h2>
-            <ul>
-                <li>Français : Langue maternelle</li>
-                <li>Anglais : Courant (C1)</li>
-                <li>Espagnol : Intermédiaire (B2)</li>
-            </ul>
-        </section>
-
-        <hr>
-
-        <section class="interests">
-            <h2>Centres d'Intérêt</h2>
-            <ul>
-                <li>Lecture</li>
-                <li>Voyages</li>
-                <li>Photographie</li>
-                <li>Sport (randonnée, natation)</li>
-            </ul>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 Votre Nom. Tous droits réservés.</p>
-        </footer>
-    </div>
+<div class="section">
+            <h2>Projets (Optionnel)</h2>
+            <div class="project-item">
+                <h3>Nom du Projet</h3>
+                <p><a href="#" target="_blank">Lien vers le projet (si disponible)</a></p>
+                <p>Brève description du projet, votre rôle et les technologies utilisées.</p>
+            </div>
+        </div>
+   </div>
 </body>
 </html>
